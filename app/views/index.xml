@@ -1,10 +1,6 @@
 <Alloy>
-	<Window class="container" layout="vertical">
+	<Window class="container" layout="vertical">				
 		
-		
-		<View id="fgHeader" platform="ios">
-			<Label id="fgHeaderTitle">TiFlexiGrid</Label>
-		</View>
 		<TextField id="textField" borderStyle="Ti.UI.INPUT_BORDERSTYLE_BEZEL" keyboardToolbarColor="#999" top="10" height="35" width="300" />
         
         <Button onClick="searchYoutube">Buscar</Button>		  

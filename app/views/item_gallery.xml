@@ -1,7 +1,9 @@
 <Alloy>
-	<View id="mainView">
-		<View id="imgContainer">
+	<View id="mainView" layout="vertical">
+		<View id="imgContainer" >
 			<ImageView id="thumb"/>
-		</View>	
+			<Label id="lblTime">dsadsadas</Label>			
+		</View>
+		<Label id="lblTitle"></Label>	
 	</View>	
 </Alloy>

@@ -2,7 +2,7 @@
 	width:Ti.UI.FILL,
 	height:Ti.UI.FILL,
 	layout:'vertical',
-	backgroundColor:'transparent',
+	backgroundColor:'#FFFFFF',
 	zIndex:0
 },
 "imgContainer":{
@@ -11,4 +11,25 @@
 "thumb":{
 	width:Ti.UI.SIZE,
 	height:Ti.UI.SIZE
+}
+
+"#lblTitle": {
+	color: "blue",
+	left: 0,
+	font: {
+		fontSize: 10,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'left'
+}
+
+"#lblTime": {
+	backgroundColor:'#333',	
+	right: 0,
+	bottom: 0,
+	color: "#FFFFFF",
+	font: {
+		fontSize: 7,
+		fontFamily: 'Helvetica Neue'
+	},
 }

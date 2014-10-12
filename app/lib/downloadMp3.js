@@ -1,19 +1,15 @@
-exports.downloadMp3 = function(title,url,progressCallback,endCallback) {
-	Ti.API.info("URL: " + '192.168.1.75/videos/index.php?url=' + url);
+exports.downloadMp3 = function(title,id,progressCallback,endCallback) {
+	Ti.API.info("URL: " + '192.168.1.75/videosymfony/web/app_dev.php/youtube/' + id);
 	get_remote_file(
     	title + '.mp3', 
-    	'192.168.1.75/videos/index.php?url=' + url,
+    	//'jmayoranotandil.ddns.net/videosymfony/videos/index.php?url=' + url,
+    	'192.168.1.75/videosymfony/web/app_dev.php/youtube/' + id,    	
     	//'http://youtubeinmp3.com/fetch/?video=' + url, //https://www.youtube.com/watch?v=ZasFsBrUQKQ', 
     	function(fileobj) {
     		
     		alert('finalizamos de bajar el video');
     		endCallback(fileobj);
-	        /*Ti.API.info(fileobj.path);
 	        
-	        //var file = Ti.Filesystem.getFile(Ti.Filesystem.externalStorageDirectory,'Music','music124.mp3');
-	        var file = Ti.Filesystem.getFile(Ti.Filesystem.getExternalStorageDirectory(),"Music",'music12456.mp3');
-	        var player = Ti.Media.createSound({url:file.nativePath});
-			player.play();*/
 	    }, 
     	function(progress) {
     		progressCallback(progress);
