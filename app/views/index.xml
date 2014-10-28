@@ -1,12 +1,13 @@
 <Alloy>
-	<Window class="container" layout="vertical">				
-		
-		<TextField id="textField" borderStyle="Ti.UI.INPUT_BORDERSTYLE_BEZEL" keyboardToolbarColor="#999" top="10" height="35" width="300" />
-        
-        <Button onClick="searchYoutube">Buscar</Button>		  
-        
-        <ProgressBar id="pb" top="10" width="250" height="auto" min="0" max="100" value="0" color="#fff" message="Downloading 0 of 100" />                 
-		
+	<Window class="container" layout="horizontal">				
+		<View layout="horizontal" width="100%" height="125px">
+			<Label id="lblSearch">Busca tu musica:</Label>
+			<TextField id="textField" borderStyle="Ti.UI.INPUT_BORDERSTYLE_BEZEL" color="#FFF9" top="10" height="35"  width="85%"/>	        
+	        <Button backgroundSelectedColor="#FFF" onClick="searchYoutube" backgroundImage="/images/search.png" width="25" height="25" left="15"></Button>
+        </View>  
+                                        		
 		<Require type="widget" src="com.prodz.tiflexigrid" id="fg"/>
+		
+		
 	</Window>
 </Alloy>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.jmayorano.mp3.youtube</id>
-    <name>mp3-youtube</name>
+    <id>com.converter.mp3</id>
+    <name>Mp3 Converter</name>
     <version>1.0</version>
-    <publisher>Jonatan</publisher>
-    <url>http://</url>
-    <description>not specified</description>
-    <copyright>2014 by Jonatan</copyright>
-    <icon>appicon.png</icon>
+    <publisher>Jonatan Mayorano</publisher>
+    <url>http://www.theyoutubemp3.com</url>
+    <description>Convertidor de video a MP3</description>
+    <copyright>2014 by Jonatan Mayorano</copyright>
+    <icon>loguito.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
@@ -39,11 +39,11 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    	<manifest>    		
-    		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    		<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-  		</manifest>
-	</android>
+        <manifest>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -52,7 +52,10 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="android">dk.mikkendigital.mkdfs</module>
+        <module platform="android" version="2.1.1">ti.admob</module>
+    </modules>
     <deployment-targets>
         <target device="iphone">false</target>
         <target device="ipad">false</target>

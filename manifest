@@ -1,8 +1,8 @@
-#appname: mp3-youtube
-#publisher: Jonatan
-#url: http://
-#image: appicon.png
-#appid: com.jmayorano.mp3.youtube
-#desc: undefined
-#type: mobile
-#guid: 70477177-5fab-4c74-b7cd-dfc4368aafbf
+#appname:mp3-youtube
+#publisher:Jonatan Mayorano
+#url:http://www.theyoutubemp3.com
+#image:appicon.png
+#appid:com.conversor.mp3
+#desc:Bajate la mejor musica de youtube en formato MP3
+#type:mobile
+#guid:70477177-5fab-4c74-b7cd-dfc4368aafbf
